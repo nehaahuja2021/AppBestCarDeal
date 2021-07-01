@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Navbar */
+#navbar {
+  flex-direction: column;
+}
+#navbar ul li a {
+  font-size: 1rem;
+  padding: 0px 7px;
+  padding-bottom: 8px;
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+}
+.content h1 {
+  font-size: 9vw;
+  margin-left: 30px;
+}
+.content p {
+  max-width: 300px;
+  font-size: 12px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.bottom-menu {
+  justify-content: center;
+  align-items: center;
+  margin-right: -16px;
+  margin-top: -215px;
+}
+
+.animate {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.5;
+  width: 260px;
+}
+.animate span {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  margin-left: -46px;
+}
+.message {
+  color: orangered;
+  display: block;
+  font-weight: bold;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.5rem;
+  left: 150px;
+}
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 50px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 180px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 200px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 200px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 300px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+#displaycarcards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card {
+  margin-top: 20px;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.modalimg {
+  width: 100%;
+  height: 100%;
+}
+.principal {
+  display: flex;
+  flex-direction: column;
+}
+.formulario h1 {
+  color: black;
+  text-align: center;
+  margin-top: -50px;
+  font-size: 1rem;
+  font-weight: 900px;
+  margin-left: 50px;
+}
+.principal .formulario input[type="text"] {
+  width: 300%;
+  margin-left: 80px;
+}
+.principal .formulario input[type="number"] {
+  width: 300%;
+  margin-left: 80px;
+}
+
+.principal .formulario .boton {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 80px;
+}
+
+.scrollit {
+  width: 412px;
+  margin-left: 30px;
+  overflow: scroll;
+}
+
+.principal-1 {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+.maps {
+  width: 75%;
+  height: 100%;
+  margin-left: 45px;
+  margin-top: -90px;
+}
+
+.stylemeform {
+  width: 88%;
+  margin-left: 25px;
+  height: 385px;
+}
+
+.principal-1 .stylemeform input[type="text"] {
+  width: 67%;
+}
+.principal-1 .stylemeform input[type="number"] {
+  width: 67%;
+}
+.principal-1 .stylemeform input[type="email"] {
+  margin-top: 30px;
+  padding: 10px;
+  width: 67%;
+}
+
+.footerclass {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  font-size: small;
+  font-weight: bolder;
+}

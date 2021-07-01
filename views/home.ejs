@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Car Deals</title>
+    <link
+      rel="stylesheet"
+      href="/static/stylesheets/style.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:480px)"
+      href="/static/stylesheets/phone.css"
+      class="rel"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim&family=Pompiere&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="/static/images/logo.png" alt=" Logo Image of Company" />
+      </div>
+      <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#searchyourfav">Search</a></li>
+        <li class="item"><a href="#displaycarcards">Latest Collections</a></li>
+        <li class="item"><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+    <!--------------------------------------------->
+    <section id="home">
+      <img src="/static/images/car.png" id="carimage" alt=" car image" />
+
+      <div class="content">
+        <h1>Find your dream Car</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis
+          incidunt quidem laboriosam odit dicta id ab repudiandae itaque quo
+          doloribus quis fugit nostrum accusamus, dolor quam praesentium, illum
+          labore aliquam!
+        </p>
+        <br />
+      </div>
+    </section>
+    <!---------------------------------------->
+
+    <div class="bottom-menu">
+      <div>
+        <img
+          src="/static/images/Chevrolet-logo.png"
+          id="chevrolet"
+          alt=" car image"
+        />
+      </div>
+
+      <div>
+        <img
+          src="/static/images/audi-logo.png"
+          id="chevrolet"
+          alt=" car image"
+        />
+      </div>
+      <div>
+        <img
+          src="/static/images/bmw logo.png"
+          id="chevrolet"
+          alt=" car image"
+        />
+      </div>
+      <div>
+        <img
+          src="/static/images/ferrarilogo.png"
+          id="chevrolet"
+          alt=" car image"
+        />
+      </div>
+      <div>
+        <img
+          src="/static/images/lambologo.png"
+          id="chevrolet"
+          alt=" car image"
+        />
+      </div>
+      <div>
+        <img
+          src="/static/images/alpharomeologo.png"
+          id="chevrolet"
+          alt=" car image"
+        />
+      </div>
+    </div>
+
+    <!---------------------------------------------->
+    <section>
+      <h2 class="animate">
+        <span>Our Latest</span>
+        <div class="message">
+          <div class="word1">Best Cars</div>
+          <div class="word2">Masterpieces</div>
+          <div class="word3">Collections</div>
+        </div>
+      </h2>
+    </section>
+    <!---- Car cards and prices-->
+    <section id="displaycarcards">
+      <div class="card">
+        <img
+          class="resizecarimage"
+          src="/static/images/audicard1.jpg"
+          alt="car image"
+        />
+        <h1>Audi Q6</h1>
+        <p class="price">35000 Euros</p>
+        <p>Best Selling Car</p>
+        <p><button id="viewBtn1">View Details</button></p>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quasi repellendus, nobis laborum dolores corporis aliquid ipsum
+            itaque rem ratione dolor, corrupti veniam tempore impedit dolorum
+            natus, inventore quam! Minus esse sed temporibus? Recusandae!
+            <img
+              class="modalimg"
+              src="/static/images/audicard1.jpg"
+              alt="car image"
+            />
+          </p>
+        </div>
+      </div>
+      <!----------2nd Card-->
+      <div class="card">
+        <img
+          class="resizecarimage"
+          src="/static/images/redbmwcard2.jpg"
+          alt="car image"
+        />
+        <h1>BMW</h1>
+        <p class="price">45000 Euros</p>
+        <p>Best Selling car 2020</p>
+        <p><button id="viewBtn2">View Details</button></p>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            et ullam quo doloribus, omnis facilis, similique assumenda odio
+            voluptatum dolore illum reprehenderit porro excepturi libero, sint
+            iusto repudiandae vel inventore atque. Error, nulla sit.
+          </p>
+          <img
+            class="modalimg"
+            src="/static/images/redbmwcard2.jpg"
+            alt="car image"
+          />
+        </div>
+      </div>
+      <!--3rd card-->
+      <div class="card">
+        <img
+          class="resizecarimage"
+          src="/static/images/whiteferraricard3.jpg"
+          alt="car image"
+        />
+        <h1>Ferrari</h1>
+        <p class="price">50000 Euros</p>
+        <p>Best Selling Car</p>
+        <p><button id="viewBtn3">View Details</button></p>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
+            officiis ratione accusamus magni molestias aliquid ad ab reiciendis
+            quis impedit aut, provident, nihil, qui pariatur blanditiis delectus
+            ullam eligendi repudiandae vero natus facere sapiente.
+          </p>
+          <img
+            class="modalimg"
+            src="/static/images/whiteferraricard3.jpg"
+            alt="car image"
+          />
+        </div>
+      </div>
+
+      <!--4th Card-->
+      <div class="card">
+        <img
+          class="resizecarimage"
+          src="/static/images/whitelambocard4.jpg"
+          alt="car image"
+        />
+        <h1>Lambhorgini</h1>
+        <p class="price">70000 Euros</p>
+        <p>Best selling car</p>
+        <p><button id="viewBtn4">View details</button></p>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
+            doloremque dolorem sint nemo a maxime doloribus impedit suscipit
+            dolor, fugit, voluptatibus nisi, vel reiciendis eaque quibusdam!
+            Repellat libero quos nemo sequi repudiandae consectetur iste.
+          </p>
+          <img
+            class="modalimg"
+            src="/static/images/whitelambocard4.jpg"
+            alt="car image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------->
+    <!------------------------SEARCHSECTION----------------->
+    <section id="searchyourfav">
+      <div class="principal">
+        <div class="wrap">
+          <form class="formulario" action="">
+            <h1>Search Available Cars</h1>
+
+            <input type="text" id="tareaInput" placeholder=" Brand" />
+
+            <input type="number" id="priceInput" placeholder=" Budget" />
+
+            <input
+              type="button"
+              class="boton"
+              id="btn-agregar"
+              value="Search"
+            />
+          </form>
+        </div>
+
+        <div class="scrollit">
+          <table id="cartable">
+            <tbody>
+              <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>BodyStyle</th>
+                <th>Price in Euros</th>
+                <th>Image</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!---SEARCH SECTION ENDS-->
+
+    <section id="contact">
+      <div class="mapdetails"></div>
+      <div class="principal-1">
+        <iframe
+          class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d80541.07345562805!2d4.361715544272798!3d50.888402993123115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d50.8557262!2d4.4224225!4m5!1s0x47c3e7fdd9473595%3A0x422118015d670a73!2scars%20showroom!3m2!1d50.9178462!2d4.4275307!5e0!3m2!1sen!2sbe!4v1624472792304!5m2!1sen!2sbe"
+          width="50%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <div class="wrap-1">
+          <form
+            class="stylemeform"
+            action="#"
+            method="post"
+            name="google-sheet"
+          >
+            <h1>Contact Us</h1>
+            <!------------------------------>
+            <input
+              type="text"
+              name="name"
+              id="nameInput"
+              placeholder=" Full-Name"
+              required
+            />
+
+            <input
+              type="number"
+              name="phone"
+              id="phoneInput"
+              placeholder="Phone Number"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder=" Email address"
+              required
+            />
+
+            <input
+              type="text"
+              name="message"
+              id="messageInput"
+              placeholder=" Message"
+            />
+
+            <input
+              type="submit"
+              class="boton"
+              id="btn-submit"
+              value="Send Message"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------->
+    <section>
+      <footer>
+        <div class="footerclass">
+          <p>Phone : +32-00000000</p>
+          <p>
+            Email : helpteam@bestcardeals.com <br />copyright
+            &copy;@www.bestcardeals.com.All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="static/scripts/frontend.js"></script>
+  </body>
+</html>

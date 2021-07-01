@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Megrim", cursive;
+  font-size: 16px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  background-color: orange;
+}
+
+/* Navigation Bar :Logo and Image */
+#logo {
+  margin: 10px 24px;
+}
+#logo img {
+  margin: 5px 10px 5px 20px;
+  height: 40px;
+}
+/* Nav Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-weight: bolder;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1em;
+}
+#navbar ul li a {
+  color: black;
+  display: block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: orangered;
+  background-color: gray;
+}
+
+/* css new-- styling home section */
+#home {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  padding: 3x 200px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+
+#carimage {
+  width: 65%;
+  right: 20px;
+  bottom: 60px;
+  margin-left: -20px;
+  animation: run 2s linear 1;
+}
+@keyframes run {
+  /* Car animation */
+  0% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-top: 100px;
+}
+
+.content h1 {
+  text-align: left;
+  margin-top: -100px;
+  color: orangered;
+  font-size: 50px;
+  text-shadow: 0 0 5px orangered, 0 0 10px orangered, 0 0 20px orangered,
+    0 0 40px orangered, 0 0 80px orangered;
+}
+
+.content p {
+  max-width: 450px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-right: 100px;
+  color: black;
+}
+
+.bottom-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 150px;
+  margin-top: -300px;
+}
+#chevrolet {
+  margin: 3 px 6px;
+  height: 40px;
+}
+
+/* 2nd section Heading animated */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.animate {
+  color: black;
+  margin-top: 80px;
+  font-family: "Megrim", cursive;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 1050px;
+}
+
+.animate span {
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.message {
+  color: orangered;
+  display: block;
+  font-weight: bold;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.5rem;
+  left: 650px;
+
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: "Megrim", cursive;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 280px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 320px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 200px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 300px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+/* Cards Display,Modal--Part 3 */
+
+#displaycarcards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  background-color: white;
+  max-width: 500px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: "Megrim", cursive;
+  color: black;
+}
+
+.price {
+  color: black;
+  font-size: 18px;
+}
+
+.card button {
+  border: solid 2px wheat;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: orangered;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: "Megrim", cursive;
+  margin-top: 20px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.resizecarimage {
+  width: 250px;
+  height: 350px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: wheat; /* Fallback color */
+  background-color: red(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Part-4 Search section for cars*/
+.wrap {
+  max-width: 800px;
+  width: 50%;
+}
+.principal {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  background-size: 100% 100%;
+  margin-top: 100px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: solid 4 px orange;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.formulario h1 {
+  color: black;
+  font-family: "Megrim", cursive;
+  font-weight: bolder;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.principal .formulario input[type="text"] {
+  margin-top: 50px;
+  padding: 10px;
+  width: 50%;
+}
+.principal .formulario input[type="number"] {
+  margin-top: 30px;
+  padding: 10px;
+  width: 50%;
+}
+
+.principal .formulario .boton {
+  background: none;
+  border: 3px solid black;
+  font-family: "Megrim", cursive;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+}
+.principal .formulario .boton:hover {
+  border: 3px solid orangered;
+}
+.scrollit {
+  overflow-y: scroll;
+  width: 700px;
+  height: 500px;
+  margin-top: 30px;
+  background-color: white;
+  border: solid 1px black;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+}
+table {
+  border: solid 2px black;
+  border-collapse: collapse;
+  background-color: white;
+  width: 100%;
+}
+/* table generation dynamicallay */
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  color: orangered;
+  font-weight: bolder;
+}
+th {
+  background-color: white;
+  color: orangered;
+}
+/*** styling contact us section */
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+.principal-1 {
+  width: 100%;
+  height: 560px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  background-size: 100% 100%;
+  margin-top: 100px;
+}
+/* Maps and Contact Form */
+.maps {
+  margin-top: 20px;
+}
+.stylemeform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border: solid 1px black;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+.principal-1 .stylemeform input[type="text"] {
+  margin-top: 30px;
+  padding: 10px;
+  width: 80%;
+}
+.principal-1 .stylemeform input[type="number"] {
+  margin-top: 30px;
+  padding: 10px;
+  width: 80%;
+}
+.principal-1 .stylemeform input[type="email"] {
+  margin-top: 30px;
+  padding: 10px;
+  width: 80%;
+}
+.principal-1 .stylemeform .boton {
+  background: none;
+  border: 1px solid black;
+  font-family: "Megrim", cursive;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+}
+/*-----Footer ----*/
+.footerclass {
+  width: 100%;
+  height: 70px;
+  background-color: orangered;
+  color: black;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
