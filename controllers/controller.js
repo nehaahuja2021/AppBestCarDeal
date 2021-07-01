@@ -9,7 +9,7 @@ const SendingCarsFromDb = (req, res, userinput) => {
 
    let dataForTheUser = { cars: [] }
 
-   let db = new sqlite3.Database('./db/us-car-models-data/db.cars');
+   let db = new sqlite3.Database('./db/db.cars');
    // console.log("Request at backend:", data);
 
    let sql = ``;
