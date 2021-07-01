@@ -26,4 +26,4 @@ app.post('/api/cars/all', (req, res) => {
   CarsController.SendingCarsFromDb(req, res, req.body);
 })
 
-app.listen(process.env.PORT || 3001, () => console.log("Server Up and running"));
+app.listen(process.env.PORT || 8080, () => console.log("Server Up and running"));
